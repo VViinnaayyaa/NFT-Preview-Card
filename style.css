@@ -1,0 +1,112 @@
+:root{
+    --softblue:hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --mainBG : hsl(217, 54%, 11%);
+    --carBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Fontsize : 18px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+.main-container{
+    background-color: var(--mainBG);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 296px;
+    height: 474px;
+    background-color: var(--carBG);
+    position: relative;
+    border-radius: 1em;
+    margin: auto;
+    padding: 20px;
+}
+.image{
+    text-align: center;
+}
+.image:hover::after{
+    content: "";
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 296px;
+    height: 271px;
+    position: absolute;
+    background-color: var(--Cyan);
+    border-radius: 0.5em;
+    right: 19px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.image img{
+    width: 296px;
+    height: 271px;
+    border-radius: 0.5em;
+}
+
+h2{
+    color: var(--White);
+    padding-top: 15px;
+    cursor: pointer;
+}
+.content p{
+    padding: 15px 0px;
+    color: var(--softblue);
+    font-weight: bolder;
+}
+
+ul {
+    border-bottom: 1px solid var(--line);
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+  }
+  #a1{
+    color: var(--Cyan);
+    font-weight: bolder;
+  }
+  #a2,.footer p{
+    color: var(--softblue);
+    font-weight: bolder;
+   
+  }
+  li a {
+    color: white;
+    text-align: center;
+    /* padding: 0px 18px; */
+    padding-bottom:17px ;
+    text-decoration: none;
+  }
+  .footer{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 12px 0px;
+  }
+  .footer img{
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--White);
+    border-radius: 2em;
+    margin-right: 17px;
+  }
+  span{
+      cursor: pointer;
+      color: var(--White);
+  }
+  h2:hover,span:hover{
+      color: var(--Cyan);
+  }
